@@ -1,0 +1,46 @@
+
+<app-navbar></app-navbar>
+
+ <!--Image-->
+
+
+ <section class="img-section">
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-12 text-center">
+                <h1 class="fw-bold heading">MOU Signed with Colleges</h1>
+                <p class="heading-text">"We are thrilled to announce our Memorandum of Understanding with top
+                    colleges. This collaboration is designed to inspire innovation, enhance learning opportunities,
+                    and foster growth. Together, we are committed to enriching educational experiences and shaping a
+                    future of excellence."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--List-->
+
+<section id="list-section" class="py-5 bg-white text-dark text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="fs-2 fw-bold">List of Colleges We Have Collaborated With</h1>
+            <div *ngFor="let item of mouList" class="d-grid gap-2 mt-4">
+                <button class="btn d-flex justify-content-between align-items-center" type="button" (click)="toggleImage(item)">
+                    <span class="text-start">{{ item.title }}</span>
+                    <i [class]="item.expanded ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+                </button>
+                <div class="col-lg-4 col-12 mx-auto img-container" *ngIf="item.expanded"> 
+                    <div class="image-container mt-3 shadow rounded" style="border: 2px solid #FF6A01;">
+                        <img [src]="item.image" alt="MOU Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-footer ></app-footer>

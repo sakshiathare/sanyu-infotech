@@ -1,0 +1,54 @@
+/*LOGO*/
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+    height: 50px;
+    width: auto;
+}
+.icon-orange {
+    color: #FF6A01;
+    
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 0 0 0 0;
+
+}
+
+#footer-section{
+    background-color: #091e3e;
+}
+#footer-section .card{
+    background-color: #091e3e;
+}
+
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves half way to make loop seamless */
+}
+ 
+ @keyframes moveLine {
+     from {
+         left: 0;
+         opacity: 1;
+     }
+     to {
+         left: 100%;
+         opacity: 1;
+     }
+ }
+ 

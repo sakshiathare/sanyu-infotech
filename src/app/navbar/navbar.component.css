@@ -1,0 +1,99 @@
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050; /* Ensures navbar stays on top */
+}
+
+
+.navbar {
+    
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-brand span {
+    font-size: 35px;
+    font-weight: 650 !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+   
+    
+    color: gray;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6A01 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FF6A01 !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+    color: #FF6A01 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #FF6A01;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-brand span {
+        font-size: 25px; /* Reduce font size for better fit */
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center align menu items */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 360px) and (max-height: 740px) {
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-shadow: none; /* Remove shadow for a cleaner look */
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 35px;
+    }
+
+    .navbar-brand span {
+        font-size: 22px;
+    }
+
+    .navbar-toggler {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .navbar-nav .nav-link.active {
+        border-bottom: 1px solid #FF6A01;
+    }
+}
+
+
