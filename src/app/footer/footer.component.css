@@ -51,4 +51,31 @@
          opacity: 1;
      }
  }
+
+ @media (max-width: 768px) {
+    #footer-section .container {
+        text-align: center;
+    }
+
+    #footer-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-section .card {
+        text-align: center;
+    }
+
+    #footer-section .card-body {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-section .d-flex {
+        justify-content: center;
+    }
+    
+}
+
  

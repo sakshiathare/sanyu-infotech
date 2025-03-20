@@ -12,7 +12,7 @@ import { MouComponent } from './mou/mou.component';
 import { ContactComponent } from './contact/contact.component';
 import { ErrorComponent } from './error/error.component';
 
-// ✅ Import these modules for form handling and API calls
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -32,8 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule,  // ✅ Required for Reactive Forms
-    HttpClientModule      // ✅ Required for HTTP requests
+    ReactiveFormsModule,  
+    HttpClientModule      
   ],
   providers: [],
   bootstrap: [AppComponent]
