@@ -65,12 +65,12 @@ export class MouComponent {
   ];
 
   toggleImage(item: any) {
-    // Close all other images
+    
     this.mouList.forEach(mou => {
       if (mou !== item) mou.expanded = false;
     });
     
-    // Toggle selected image
+    
     item.expanded = !item.expanded;
   }
 }
