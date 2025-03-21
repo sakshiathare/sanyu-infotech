@@ -35,40 +35,48 @@
   <section id="footer-section" class="py-5  text-white text-center">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" >
+        <div class="col">
           <div class="card h-100">
-            
-            <div>
-              <div class="d-flex align-items-center justify-content-center"
+            <div class="d-flex flex-column align-items-center text-center">
+              
+              <!-- Logo inside circle -->
+              <div class="d-flex align-items-center justify-content-center" 
                 style="height: 70px; width: 70px; background-color: white; border-radius: 50%;">
-                <a class=" d-flex align-items-center" href="index.html">
-                  <img src="/assets/Images/Sanyu.png" alt="" width="36" height="36" class="me-2" 
-                  style="margin-left: 11px;">
+                <a class="d-flex align-items-center" href="index.html">
+                  <img src="/assets/Images/Sanyu.png" alt="" width="36" height="36" class="me-2">
                 </a>
               </div>
-            
-              <a href="index.html" class=" nav-link text-white mt-3 text-start">
-                <h1 class="fs-2 " style="margin-left: -13px;">Sanyu InfoTech</h1></a>
-              <p class="card-text text-start mt-2" style="color: gainsboro;">We turn business challenges into growth with tailored digital solutions. Our expert team creates powerful, scalable software that boosts efficiency and drives innovation,
-                 helping businesses stay ahead in today’s fast-paced digital world.</p>
+              
+              <!-- Company Name -->
+              <a href="index.html" class="nav-link text-white mt-3">
+                <h1 class="fs-2">Sanyu InfoTech</h1>
+              </a>
+        
+              <!-- Description -->
+              <p class="card-text mt-2 text-white" style="color: gainsboro;">
+                We turn business challenges into growth with tailored digital solutions. 
+                Our expert team creates powerful, scalable software that boosts efficiency and drives innovation, 
+                helping businesses stay ahead in today’s fast-paced digital world.
+              </p>
             </div>
           </div>
         </div>
+        
         <div class="col">
           <div class="card h-100 ">
             
             <div class="card-body text-white text-start">
               <h5 class="card-title fs-4 mt-3">Quick Links</h5>
-              <a href="#" class="nav-link active text-light card-text">
+              <a routerLink="/home" class="nav-link active text-light card-text">
                 <i class="fa-solid fa-arrow-right icon-orange"></i>Home</a>
-              <a href="#" class="nav-link active text-light card-text">
+              <a routerLink="/about" class="nav-link active text-light card-text">
                 <i class="fa-solid fa-arrow-right icon-orange"></i>About</a>
-              <a href="#" class="nav-link active text-light card-text">
+              <a routerLink="/services" class="nav-link active text-light card-text">
                 <i class="fa-solid fa-arrow-right icon-orange"></i>Services</a>
-              <a href="#" class="nav-link active text-light card-text">
+              <a routerLink="/mou" class="nav-link active text-light card-text">
                 <i class="fa-solid fa-arrow-right icon-orange"></i>MOU With Colleges</a>
-              <a href="#" class="nav-link active text-light card-text">
-                <i class="fa-solid fa-arrow-right icon-orange"></i>Contact</a>
+              <a routerLink="/contact" class="nav-link active text-light card-text">
+                <i class="fa-solid fa-arrow-right icon-orange" ></i>Contact</a>
               
             </div>
           </div>
@@ -112,24 +120,23 @@
       </div>
      
       </div>
-      <nav class="navbar text-light py-4 mt-4" style="background-color: #061429;  margin-bottom: -47px;">
-        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap" >
+      <nav class="navbar text-light py-4 mt-4 footer-nav" style="background-color: #061429; margin-bottom: -47px;">
+        <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap text-center">
             
-            
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap footer-text">
                 <p class="mb-0 me-3" style="font-size: small;">
-                     © 2025 Sanyu Infotech Pvt. Ltd. All Rights Reserved.</p>
+                    © 2025 Sanyu Infotech Pvt. Ltd. All Rights Reserved.
+                </p>
             </div>
-      
-           
-            <div class="d-flex gap-3">
-              <p class="mb-0 me-3" style="font-size: small;">
-                Designed by Sanyu Infotech</p>
-        
+    
+            <div class="d-flex gap-3 footer-text">
+                <p class="mb-0 me-3" style="font-size: small;">
+                    Designed by Sanyu Infotech
+                </p>
             </div>
-      
+    
         </div>
-      </nav>
+    </nav>
 
   </section>
 

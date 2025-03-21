@@ -53,27 +53,86 @@
  }
 
  @media (max-width: 768px) {
-    #footer-section .container {
-        text-align: center;
+
+    #footer-section {
+        text-align: center !important;
     }
 
     #footer-section .row {
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #footer-section .card {
         text-align: center;
     }
 
-    #footer-section .card-body {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+    .card {
+        width: 100%;
+        text-align: center;
     }
 
-    #footer-section .d-flex {
-        justify-content: center;
+    .card-body {
+        text-align: center !important;
+    }
+
+    .card-body h5,
+    .card-body p,
+    .card-body a {
+        text-align: center !important;
+        display: block;
+    }
+
+    .d-flex.gap-3 {
+        display: flex;
+        justify-content: center; /* Centers icons horizontally */
+        align-items: center; /* Aligns them vertically */
+        gap: 15px; /* Adjust spacing between icons */
+    }
+    
+    /* Optional: Set icon size and color */
+    .d-flex.gap-3 a i {
+        font-size: 24px; /* Adjust icon size */
+        color: white; /* Ensures visibility */
+    }
+    
+    /* Fix for small screens */
+   
+        .d-flex.gap-3 {
+            flex-wrap: nowrap; /* Prevents wrapping */
+        }
+
+    .footer-text {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .footer-nav .container-fluid {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .footer-nav .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-nav p {
+        margin: 5px 0;
+        text-align: center !important;
+    }
+    .footer-nav .container-fluid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer-section .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer-section p {
+        max-width: 90%; /* To keep text width optimized */
     }
     
 }

@@ -115,6 +115,7 @@
 
 @media (max-width: 768px)  {
 
+
     .carousel {
        
         height: 200px;
@@ -137,6 +138,62 @@
     #project-section{
         margin-top: 100px;
     }
+
+
+    #features-section .row{
+
+      flex-direction: column;
+      align-items: center !important;
+      text-align: center;
+
+    }
+   
+    #features-section .info-box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 25px;
+    }
+
+    #features-section .img{
+      width: 80%;
+      height: auto;
+    }
+
+    #features-section .info-box.p{
     
+      text-align: centers !important;
+      width: 100%;
+
+    }
+
+    #quote-section{
+      align-items: center;
+      text-align: center;
+    }
+    
+    
+    #quote-section .col-auto{
+      padding-left: 50px;
+    }
+
+    #quote-section .pp{
+      font-size:15px;
+    }
+
+    
+    #quote-section .icon2{
+      margin-left: 20px;
+    }
+    
+    
+    
+    
+  .custom-contact-row {
+    justify-content: center !important;
+    text-align: center;
+}
 }
 
