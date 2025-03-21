@@ -125,6 +125,18 @@
         
     }
 
+    #project-section .card-body {
+      justify-content: center;
+      text-align: center;
+  }
+  #project-section .icon-box {
+      margin-right: 20px;
+      margin-bottom: 10px;
+  }
+  #project-section .text-start {
+      text-align: center !important;
+      margin-left: 0 !important;
+  }
     .carousel-item img {
         margin-top: px;
         object-fit: contain;
