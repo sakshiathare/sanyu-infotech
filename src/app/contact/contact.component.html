@@ -15,7 +15,7 @@
 
 
 <!--Suppport-->
-<section id="suppport-section" class="py-5 bg-white text-dark text-center">
+<!-- <section id="suppport-section" class="py-5 bg-white text-dark text-center">
 <div class="container">
   <div class="row justify-content-center">
     <div class="card-group shadow">
@@ -66,24 +66,58 @@
     </div>
   </div>
 </div>
-</section>
+</section> -->
+<div class="container contact" style="margin-top: -70px;">
+  <div class="row text-center">
+      <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn">
+            <div class="icon rounded mt-2">
+              <i class="fa-solid fa-chart-line  text-white fs-4"></i>
+          </div>
+              <h5 class=" card-text fw-bold  mt-2" >Career Opportunities</h5>
+              <p style="  font-size: 16px; color: #333;">Discover Your Next Career<br>Move with Us</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn" style="background-color: #f0f8ff;">
+            <div class="icon rounded mt-2">
+              <i class="fa-solid fa-headset text-white fs-4"></i>
+          </div>
+              <h5 class=" card-text fw-bold  mt-2">Help & Support</h5>
+              <p>Your Success is Our Priority –<br>We're Here to Support You!</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card animate__animated animate__zoomIn">
+            <div class="icon rounded mt-2">
+              <i class="fa-solid fa-question-circle text-white fs-4"></i>
+          </div>
+              <h5 class="card-text fw-bold  mt-2">Frequently Asked Questions</h5>
+              <p>Everything you need to know<br>Explore more</p>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
 
-<section id="contact-section" class="py-5 bg-white text-dark">
+<section id="contact-section" data-aos="fade-up" data-aos-delay="100" class="py-5 bg-white text-dark">
 <div class="container">
   <div class="row align-items-center">
 
 
-    <div class="col-lg-5 col-12 text-center d-flex">
-        <img src="/assets/Images/contact.png" alt="About Image" class="about-img img-fluid ">
+    <div class="col-lg-5 col-12 text-center d-flex" data-aos="zoom-in" data-aos-delay="500">
+        <img src="/assets/Images/office.jpg" alt="About Image" class="about-img img-fluid ">
       </div>
 
     <div class="col-lg-7 col-12">
       
       <h1 class="fs-2 fw-bold">Get in Touch with Us – Visit Our Office Today!</h1>
-      <h4 class="mb-0 mt-2 fs-5" style="color: #FF6A01;">India</h4>
+      <div class=" mt-3 " style="width: 20%; margin-bottom: 30px; background-color: #ff4d00;">
+        <div class="motion-line"></div>
+    </div>
+      <h4 class="mb-0 mt-1 fs-5" style="color: #FF6A01;">India</h4>
       <p class="text-muted">
         Sanyu Info Tech, near Vikas Mitra Mandal Chowk, Bhagyoday Colony, Hingne Budrukh, Karve Nagar, Pune, Maharashtra 411052
       </p>
@@ -92,7 +126,7 @@
       <div class="container mt-4">
         <div class="row align-items-center">
             <!-- Call Section -->
-            <div class="col-md-6 d-flex align-items-center">
+            <div class="col-md-6 d-flex align-items-center" style="margin-left: -20px;" data-aos="fade-in" data-aos-delay="100">
                 <div class="d-flex align-items-center justify-content-center rounded me-3"
                     style="height: 60px; width: 60px; background-color: #4B0082;">
                     <i class="bi bi-telephone-fill text-white fs-4"></i>
@@ -104,7 +138,7 @@
             </div>
     
             <!-- Email Section -->
-            <div class="col-md-6 d-flex align-items-center email">
+            <div class="col-md-6 d-flex align-items-center email"  data-aos="fade-in" data-aos-delay="100">
                 <div class="d-flex align-items-center justify-content-center rounded me-3"
                     style="height: 60px; width: 60px; background-color: #4B0082;">
                     <i class="fa-regular fa-envelope text-white fs-4"></i>
@@ -127,11 +161,11 @@
 
 <!--Form-->
 <!-- Form Section -->
-<section id="form-section" class="py-5 bg-white text-dark">
+<section id="form-section" class="py-5 bg-white text-dark" data-aos="fade-up" data-aos-delay="100"> 
   <div class="container">
     <div class="row align-items-center mb-5">
       <!-- Form -->
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="slide-up" data-aos-delay="300">
         <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
           <div class="row g-2">
             <div class="col-md">
@@ -173,8 +207,8 @@
       </div>
 
       <!-- Map -->
-      <div class="col-md-6 map" style="height: 350px;">
-        <iframe class="position-relative rounded w-100 h-100"
+      <div class="col-md-6 map " style="height: 350px;" data-aos="slide-up" data-aos-delay="600" data-aos-once="true">
+        <iframe class="position-relative rounded w-100 h-100 shadow-sm"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8854653832695!2d73.8172064!3d18.488846499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfbef4c4b3c5%3A0xbdf929afd677c193!2sSANYU%20INFOTECH%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1739802328409!5m2!1sen!2sin"
           frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>

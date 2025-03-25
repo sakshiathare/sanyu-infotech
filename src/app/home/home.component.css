@@ -12,6 +12,7 @@
     width: 83%;
     height: 600px;
     object-fit: cover;
+    margin-top: -45px;
 }
 
 .h5 {
@@ -203,9 +204,6 @@
     
     
     
-  .custom-contact-row {
-    justify-content: center !important;
-    text-align: center;
-}
+  
 }
 
